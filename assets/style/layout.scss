@@ -1,0 +1,58 @@
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .grid-header-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+  }
+
+
+  
+.answer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.answer-table th,
+.answer-table td {
+    border: 1px solid $light_container_border;
+    padding: 8px;
+    text-align: center;
+}
+
+.answer-table th {
+    background-color: $secondary_color;
+    color: $light_text_color;
+}
+
+.header-logo {
+    width: initial;
+    height: 100%;
+  }
+  .header-content {
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
