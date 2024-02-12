@@ -12,11 +12,18 @@
           <img id="fasttrack" src="/fast-track.png"/>
         </div>  
       </div>
-
       <section id="actions" class="main-section">
+        <div class="main-setion-header">
+        <h1>
+          YOU CLAIM THAT YOU ARE SMART&nbsp;! <br/>
+          LET'S PUT YOUR KNOWLEDGE INTO&nbsp;TEST.
+        </h1>
+      </div>
+      <div class="main-section-actions">
           <v-button class="btn" @click="navigate('/quiz')">start</v-button>
           <v-button class="btn" @click="navigate('/score')">score</v-button>
           <v-button class="btn" @click="navigate('/configuration')">settings</v-button>
+        </div>
       </section>
       <div id ="mouse" class="mouse-wrapper">
         <div  class="mouse"></div>

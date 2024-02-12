@@ -154,8 +154,9 @@ html::-webkit-scrollbar-track {
   }
   .main-section {
     height: 100vh;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1em;
     align-content: center;
     align-items: center;
@@ -163,6 +164,10 @@ html::-webkit-scrollbar-track {
     margin-top: 100vh;
     padding-top: 80px;
     box-sizing: border-box;
+    flex-direction: column;
+    text-align: center; 
+  }
+  .main-setion-header {
     
   }
   .fasttrck-logo-container-fixed {
@@ -226,5 +231,8 @@ html::-webkit-scrollbar-track {
   }
   .question-position {
     font-size: 1em;
+  }
+  .main-setion-header {
+    font-size: 0.8em; 
   }
 }
