@@ -2,7 +2,7 @@
           <v-button :onClick="() => navigate('/score/list')" :isDisabled="false" >See All</v-button> 
         <div class="user-info" v-if="rank.success">
             <h1 v-if="website.submittedResult.length === 1">congrats you run alone and you reach the first</h1>
-            <p>You were better then {{ rank.percentage }}% of all quizers </p>
+            <p>You were better than {{ rank.percentage }}% of all quizers </p>
         </div>
 </template>
 
