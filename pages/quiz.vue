@@ -45,7 +45,7 @@
             <p>Difficulty&nbsp;:<br /> <span>{{ website.selectedOption.difficulty }}</span></p>
           </div>
           <div class="footer-actions">
-            <v-button :onClick="submitQuiz" additionalClass="primary" :isDisabled="currentQuestionIndex !== website.result.length - 1">Submit</v-button>
+            <v-button :onClick="submitQuiz" additionalClass="primary" :isDisabled="( (currentQuestionIndex !== website.result.length - 1) || !checkIfOneSelected())">Submit</v-button>
           </div>
         </div>
       </footer>
