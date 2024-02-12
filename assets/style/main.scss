@@ -60,15 +60,42 @@ html::-webkit-scrollbar-track {
     outline: none;
     margin: 0 15px;
     font-weight: 700;
-    &:hover {
-        background-color: $primary_color;
-        box-shadow: 0px 15px 20px $primary_opacity_color;
-        color: $light_text_color;
-        transform: scale(1.1);
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: $primary_color;
+          box-shadow: 0px 15px 20px $primary_opacity_color;
+          color: $light_text_color;
+          transform: scale(1.1);
+      }
     }
+    &:active {
+      background-color: $primary_color;
+      box-shadow: 0px 15px 20px $primary_opacity_color;
+      color: $light_text_color;
+      transform: scale(1.1);
+    }
+
     &:disabled {
         cursor: not-allowed;
         opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &.primary {
+      background-color: $secondary_color ; // 
+      color: white;
+      &:active,&:hover {
+        box-shadow: 0px 15px 20px $secondary_opacity_color;
+      }
+    }
+    &.visible {
+      transition: none;
+      visibility: hidden;
     }
       // Responsive styling
     @media screen and (max-width: 650px) {
@@ -193,5 +220,11 @@ html::-webkit-scrollbar-track {
     .footer-content {
 
     font-size: 16px;
+  }
+  .main-section {
+    padding: 0 4%;
+  }
+  .question-position {
+    font-size: 1em;
   }
 }
