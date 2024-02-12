@@ -168,8 +168,8 @@ html::-webkit-scrollbar-track {
     flex-direction: column;
     text-align: center; 
   }
-  .main-setion-header {
-    
+  .main-setion-header  > h1{
+    font-weight: 400;
   }
   .fasttrck-logo-container-fixed {
     position: fixed;
