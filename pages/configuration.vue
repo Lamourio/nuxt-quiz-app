@@ -19,7 +19,11 @@
           <option :key="difficulty" :value="difficulty" v-for="difficulty in website.difficultyList">{{ difficulty }}</option>
         </select>
       </div>
+      <div class="select-container">
+        <v-button additional-class="primary" :onClick="() => navigate('/quiz')">Start Quiz</v-button>
+      </div>
     </div>
+    
   </div>
   </main>
 </template>
@@ -27,6 +31,9 @@
 <script lang="ts" setup>
   const website = useWebsiteStore();
   await callOnce(website.fetchCategory);
+  async function navigate(url : string) {
+    await navigateTo(url);
+  } 
 </script>
 
 <style scoped>
@@ -42,7 +49,7 @@
   }
   .select-container > select {
     text-align: center;
-    margin-top: 1%;
+    margin-top: 13px;
   }
   #category-select,
   #difficulty-select {
