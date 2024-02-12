@@ -25,7 +25,7 @@
           <v-button class="btn" @click="navigate('/configuration')">settings</v-button>
         </div>
       </section>
-      <div id ="mouse" class="mouse-wrapper">
+      <div id ="mouse" @click="() => scrollToEnd()" class="mouse-wrapper">
         <div  class="mouse"></div>
       </div>
   </div>
@@ -35,7 +35,9 @@
 async function navigate(url : string) {
   await navigateTo(url)
 } 
-
+const scrollToEnd = () => {
+    scrollTo(0,window.innerHeight)
+  }
 onBeforeMount(() => {
   setTimeout(() => {
     scrollTo(0,0);
@@ -56,6 +58,7 @@ onMounted(() => {
   
   let isFixed = false ;
   let snap = true ;
+
 
   const parallaxEffect = () => {
     const distance = window.scrollY;
