@@ -237,3 +237,36 @@ html::-webkit-scrollbar-track {
     font-size: 0.8em; 
   }
 }
+
+
+
+.select-container {
+  text-align: center;
+  width: 70%;
+  margin: 2% auto;
+}
+.select-container > select {
+  text-align: center;
+  margin-top: 13px;
+}
+#category-select,
+#difficulty-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#category-select:hover,
+#difficulty-select:hover {
+  border-color: #333;
+}
+
+#category-select:focus,
+#difficulty-select:focus {
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+}
