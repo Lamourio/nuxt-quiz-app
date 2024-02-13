@@ -1,7 +1,3 @@
-<style lang="scss">
-    @use "~/assets/style/main.scss";
-</style>
-
 <template>
   
   <div id="container" class="fade-in">
